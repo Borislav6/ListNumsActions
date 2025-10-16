@@ -24,8 +24,11 @@
                         break;
                     case "contains":
 
-                        int value = int.Parse(cmd[1]);
-                        Console.WriteLine(nums.Contains(value) ? "Yes" : "No");
+                        int checkNum = int.Parse(cmd[1]);
+                        if (nums.Contains(checkNum))
+                            Console.WriteLine("Yes");
+                        else
+                            Console.WriteLine("No");
                         break;
                         
 
@@ -35,9 +38,9 @@
                         nums.Add(a + b);
                         break;
 
-                   
+             
+                        break;
 
-                   
                     default:
                         break;
                 }
