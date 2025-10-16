@@ -27,7 +27,7 @@
                         int value = int.Parse(cmd[1]);
                         Console.WriteLine(nums.Contains(value) ? "Yes" : "No");
                         break;
-                        break;
+                        
 
                     case "add":
                         int a = int.Parse(cmd[1]);
@@ -35,25 +35,7 @@
                         nums.Add(a + b);
                         break;
 
-                    case "countl":
-                        int number = int.Parse(cmd[1]);
-                        int countLarger = nums.Count(n => n > number);
-                        Console.WriteLine(countLarger);
-                        break;
-
-                    case "countodds":
-                        int countOdds = nums.Count(n => n % 2 != 0);
-                        Console.WriteLine($"CountOdds={countOdds}");
-                        break;
-
-                    case "countevens":
-                        int countEvens = nums.Count(n => n % 2 == 0);
-                        Console.WriteLine($"CountEvens={countEvens}");
-                        break;
-
-                    case "sumall":
-                        Console.WriteLine(nums.Sum());
-                        break;
+                   
 
                    
                     default:
