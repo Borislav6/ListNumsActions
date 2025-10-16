@@ -23,10 +23,12 @@
                         Console.WriteLine(string.Join(" ", nums));
                         break;
                     case "contains":
-                        
-                        //TODO
+                        int checkNum = int.Parse(cmd[1]);
+                        if (nums.Contains(checkNum))
+                            Console.WriteLine("Yes");
+                        else
+                            Console.WriteLine("No");
                         break;
-
 
                     //TO DO
                     default:
